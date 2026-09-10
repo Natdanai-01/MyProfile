@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio | ณัฐดนัย ติ๊ตาวงศ์</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><i class="fa-solid fa-code"></i> E-Portfolio</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">ข้อมูลแนะนำตัว</a></li>
+                    <li><a href="#education">ประวัติการศึกษา</a></li>
+                    <li><a href="#certificates">เกียรติบัตร</a></li>
+                    <li><a href="#contact">ช่องทางติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero / Profile Section -->
+    <section id="about" class="section profile-section">
+        <div class="container profile-card">
+            <div class="profile-img-container">
+                <img src="images/profile.jpg" alt="รูปประจำตัว" class="profile-img" onerror="this.src='https://via.placeholder.com/250?text=Profile+Image'">
+            </div>
+            <div class="profile-info">
+                <h2>สวัสดีครับ 👋</h2>
+                <h3>นาย ณัฐดนัย ติ๊ตาวงศ์</h3>
+                <p class="tagline">มุ่งมั่นก้าวสู่การเป็นนักพัฒนาซอฟต์แวร์มืออาชีพ</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>รหัสนักเรียน:</strong> 51235</div>
+                    <div class="info-item"><strong>แผนการเรียน:</strong> วิทย์ - คณิต</div>
+                    <div class="info-item"><strong>เกรดเฉลี่ย (GPAX):</strong> <span class="badge">2.73</span></div>
+                    <div class="info-item"><strong>ความสนใจ:</strong> เขียนโปรแกรม, เล่นเกม</div>
+                    <div class="info-item highlight"><strong>เป้าหมายชีวิต:</strong> เกมเมอร์ (Gamer)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-card">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> ประวัติการศึกษา</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge">ปัจจุบัน</div>
+                    <div class="timeline-content">
+                        <span class="year">2568 - ปัจจุบัน</span>
+                        <h3>มหาวิทยาลัยเทคโนโลยีล้านนา ลำปาง</h3>
+                        <p>ระดับอุดมศึกษา</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-badge">มัธยม</div>
+                    <div class="timeline-content">
+                        <span class="year">2562 - 2567</span>
+                        <h3>โรงเรียนเถินวิทยา</h3>
+                        <p>ระดับมัธยมศึกษา (สายวิทย์ - คณิต)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-badge">ประถม</div>
+                    <div class="timeline-content">
+                        <span class="year">2556 - 2561</span>
+                        <h3>โรงเรียนบ้านนาเบี้ย</h3>
+                        <p>ระดับประถมศึกษา</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> ผลงานและเกียรติบัตร</h2>
+            <div class="cert-grid">
+                <!-- Certificate 0 -->
+                <div class="cert-card" onclick="openModal('images/certificate0.png', 'เกียรติบัตรเรียนดี')">
+                    <div class="cert-img-wrapper">
+                        <img src="images/certificate0.png" alt="เกียรติบัตรเรียนดี" class="cert-img" onerror="this.src='https://via.placeholder.com/400x300?text=Certificate+Image'">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>คลิกเพื่อดูภาพขยาย</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>เกียรติบัตรระบบเครือข่ายคอมพิวเตอร์พื้นฐาน</h3>
+                        <p>โครงการ Thai MOOC - จุฬาลงกรณ์มหาวิทยาลัย</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 1 (New Thai MOOC) -->
+                <div class="cert-card" onclick="openModal('images/certificate1.png', 'การสร้างหน้าเว็บเบื้องต้นด้วย HTML และ CSS (Thai MOOC)')">
+                    <div class="cert-img-wrapper">
+                        <img src="images/certificate1.png" alt="เกียรติบัตร Thai MOOC" class="cert-img">
+                        <div class="overlay">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                            <span>คลิกเพื่อดูภาพขยาย</span>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>สู่การเป็นนักพัฒนาเว็บ: HTML & CSS</h3>
+                        <p>โครงการ Thai MOOC - จุฬาลงกรณ์มหาวิทยาลัย</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-card">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-paper-plane"></i> ช่องทางการติดต่อ</h2>
+            <div class="contact-grid">
+                <a href="mailto:kananokaito@gmail.com" class="contact-card email">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <div>
+                        <span class="label">E-Mail</span>
+                        <span class="val">kananokaito@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/natdanai titavong" target="_blank" class="contact-card facebook">
+                    <i class="fa-brands fa-facebook contact-icon"></i>
+                    <div>
+                        <span class="label">Facebook</span>
+                        <span class="val">natdanai titavong</span>
+                    </div>
+                </a>
+                <div class="contact-card tiktok">
+                    <i class="fa-brands fa-tiktok contact-icon"></i>
+                    <div>
+                        <span class="label">TikTok</span>
+                        <span class="val">---</span>
+                    </div>
+                </div>
+                <div class="contact-card line">
+                    <i class="fa-brands fa-line contact-icon"></i>
+                    <div>
+                        <span class="label">Line ID</span>
+                        <span class="val">natdanai</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Certificate Popup -->
+    <div id="certModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModalSrc" alt="เกียรติบัตรขยาย">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My E-Portfolio | แฟ้มสะสมผลงานออนไลน์ : ณัฐดนัย ติ๊ตาวงศ์</p>
+    </footer>
+
+    <script>
+        function openModal(imgSrc, captionText) {
+            var modal = document.getElementById("certModal");
+            var modalImg = document.getElementById("imgModalSrc");
+            var caption = document.getElementById("caption");
+            
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+            caption.innerHTML = captionText;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("certModal");
+            modal.style.display = "none";
+        }
+
+        // Close modal when clicking outside of the image
+        window.onclick = function(event) {
+            var modal = document.getElementById("certModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
